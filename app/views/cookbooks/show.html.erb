@@ -1,0 +1,19 @@
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @cookbook.title %>
+</p>
+
+<p>
+  <strong>Instruction:</strong>
+  <%= @cookbook.instruction %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @cookbook.image %>
+</p>
+
+<%= link_to 'Edit', edit_cookbook_path(@cookbook) %> |
+<%= link_to 'Back', cookbooks_path %>
